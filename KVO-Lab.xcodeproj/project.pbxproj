@@ -10,6 +10,7 @@
 		B77C6A85243E875900733F45 /* CreateUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C6A84243E875900733F45 /* CreateUserController.swift */; };
 		B77C6A87243E877B00733F45 /* UserTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C6A86243E877B00733F45 /* UserTableController.swift */; };
 		B77C6A89243E878E00733F45 /* DepositController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C6A88243E878E00733F45 /* DepositController.swift */; };
+		B77C6A8C243E88FD00733F45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C6A8B243E88FD00733F45 /* User.swift */; };
 		B7A52156243E81260096383E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A52155243E81260096383E /* AppDelegate.swift */; };
 		B7A52158243E81260096383E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A52157243E81260096383E /* SceneDelegate.swift */; };
 		B7A5215D243E81260096383E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5215B243E81260096383E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		B77C6A84243E875900733F45 /* CreateUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserController.swift; sourceTree = "<group>"; };
 		B77C6A86243E877B00733F45 /* UserTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableController.swift; sourceTree = "<group>"; };
 		B77C6A88243E878E00733F45 /* DepositController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositController.swift; sourceTree = "<group>"; };
+		B77C6A8B243E88FD00733F45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7A52152243E81260096383E /* KVO-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVO-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A52155243E81260096383E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A52157243E81260096383E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B77C6A8A243E88F200733F45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B77C6A84243E875900733F45 /* CreateUserController.swift */,
+				B77C6A86243E877B00733F45 /* UserTableController.swift */,
+				B77C6A88243E878E00733F45 /* DepositController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B77C6A8D243E890300733F45 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				B77C6A8B243E88FD00733F45 /* User.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		B7A52149243E81260096383E = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +83,8 @@
 				B7A52155243E81260096383E /* AppDelegate.swift */,
 				B7A52157243E81260096383E /* SceneDelegate.swift */,
 				B7A5215B243E81260096383E /* Main.storyboard */,
-				B77C6A84243E875900733F45 /* CreateUserController.swift */,
-				B77C6A86243E877B00733F45 /* UserTableController.swift */,
-				B77C6A88243E878E00733F45 /* DepositController.swift */,
+				B77C6A8D243E890300733F45 /* Modals */,
+				B77C6A8A243E88F200733F45 /* Controllers */,
 				B7A5215E243E81270096383E /* Assets.xcassets */,
 				B7A52160243E81270096383E /* LaunchScreen.storyboard */,
 				B7A52163243E81270096383E /* Info.plist */,
@@ -146,6 +165,7 @@
 			files = (
 				B7A52156243E81260096383E /* AppDelegate.swift in Sources */,
 				B7A52158243E81260096383E /* SceneDelegate.swift in Sources */,
+				B77C6A8C243E88FD00733F45 /* User.swift in Sources */,
 				B77C6A89243E878E00733F45 /* DepositController.swift in Sources */,
 				B77C6A85243E875900733F45 /* CreateUserController.swift in Sources */,
 				B77C6A87243E877B00733F45 /* UserTableController.swift in Sources */,
