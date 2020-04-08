@@ -26,6 +26,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ITv-dq-Hbu" kind="show" id="Y8K-cb-vlY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -45,6 +48,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZT-xs-kEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="913.04347826086962" y="127.90178571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sbz-uG-Bfx">
+            <objects>
+                <viewController id="ITv-dq-Hbu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uLG-Xb-FAh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybe-EJ-Vuc">
+                                <rect key="frame" x="90" y="190" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-vj-wAF">
+                                <rect key="frame" x="56" y="289" width="77" height="30"/>
+                                <state key="normal" title="Withdrawal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-Gd-J6d">
+                                <rect key="frame" x="296" y="291" width="53" height="30"/>
+                                <state key="normal" title="Deposit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ybe-EJ-Vuc" firstAttribute="top" secondItem="QkZ-Ab-8gB" secondAttribute="top" constant="102" id="De4-bN-1mN"/>
+                            <constraint firstItem="g2s-vj-wAF" firstAttribute="top" secondItem="ybe-EJ-Vuc" secondAttribute="bottom" constant="65" id="Mcy-dl-EEv"/>
+                            <constraint firstItem="hT8-Gd-J6d" firstAttribute="top" secondItem="ybe-EJ-Vuc" secondAttribute="bottom" constant="67" id="PpO-Ly-uke"/>
+                            <constraint firstItem="QkZ-Ab-8gB" firstAttribute="trailing" secondItem="ybe-EJ-Vuc" secondAttribute="trailing" constant="90" id="V8s-O0-ZsV"/>
+                            <constraint firstItem="g2s-vj-wAF" firstAttribute="leading" secondItem="QkZ-Ab-8gB" secondAttribute="leading" constant="56" id="f91-9Q-c5h"/>
+                            <constraint firstItem="ybe-EJ-Vuc" firstAttribute="leading" secondItem="QkZ-Ab-8gB" secondAttribute="leading" constant="90" id="p7K-GO-4V1"/>
+                            <constraint firstItem="QkZ-Ab-8gB" firstAttribute="trailing" secondItem="hT8-Gd-J6d" secondAttribute="trailing" constant="65" id="xbs-ST-s08"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QkZ-Ab-8gB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HKF-PD-AmJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1oK-lM-tT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.0434782608697" y="127.90178571428571"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="lak-eh-KkC">
