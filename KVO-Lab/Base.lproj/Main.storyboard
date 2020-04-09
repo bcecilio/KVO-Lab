@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Table Controller-->
         <scene sceneID="qnh-tF-08u">
             <objects>
-                <viewController id="Lt2-L6-Ve7" sceneMemberID="viewController">
+                <viewController id="Lt2-L6-Ve7" customClass="UserTableController" customModule="KVO_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGj-yy-Hl4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                         <viewLayoutGuide key="safeArea" id="38K-rU-b9i"/>
                     </view>
                     <navigationItem key="navigationItem" id="22o-pQ-aU6"/>
+                    <connections>
+                        <outlet property="tableView" destination="H9a-L0-0jp" id="vmT-sV-PTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZT-xs-kEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

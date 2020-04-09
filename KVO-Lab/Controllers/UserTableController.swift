@@ -20,7 +20,7 @@ class UserTableController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureTableView()
     }
     
     private func configureTableView() {
