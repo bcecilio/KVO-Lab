@@ -9,22 +9,40 @@
 import UIKit
 
 class CreateUserController: UIViewController {
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var balanceTextField: UITextField!
+    
+    private var user: User?
+    private var userBalance: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureTextField() {
+        usernameTextField.delegate = self
+        balanceTextField.delegate = self
     }
-    */
+    
+    @IBAction func createButtonPressed(_ sender: UIButton) {
+        if usernameTextField.text!.isEmpty && balanceTextField.text!.isEmpty {
+            showAlert(title: "Error", message: "All fields must be filled")
+        } else {
+            showAlert(title: "Success", message: "Account Created")
+        }
+    }
+    
+}
 
+extension CreateUserController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        user?.userName = textField.text ?? "no userName"
+    }
 }

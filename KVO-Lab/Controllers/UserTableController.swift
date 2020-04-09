@@ -9,22 +9,38 @@
 import UIKit
 
 class UserTableController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var user = [User]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-    */
+}
 
+extension UserTableController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return user.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        let userInfo = user[indexPath.row]
+        cell.textLabel?.text = userInfo.userName
+        cell.detailTextLabel?.text = userInfo.accountBalance.description
+        return cell
+    }
 }

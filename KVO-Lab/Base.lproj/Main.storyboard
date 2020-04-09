@@ -92,7 +92,7 @@
         <!--Item 1-->
         <scene sceneID="lak-eh-KkC">
             <objects>
-                <viewController id="3cV-9M-Co1" sceneMemberID="viewController">
+                <viewController id="3cV-9M-Co1" customClass="CreateUserController" customModule="KVO_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5rF-cZ-sP7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-B0-sIy">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Balance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-B0-sIy">
                                 <rect key="frame" x="20" y="281.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -110,6 +110,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MnB-uQ-xz1">
                                 <rect key="frame" x="184" y="355.5" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createButtonPressed:" destination="3cV-9M-Co1" eventType="touchUpInside" id="i9L-Hb-DRW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E39-r3-Xno">
                                 <rect key="frame" x="20" y="129" width="374" height="33.5"/>
@@ -136,6 +139,10 @@
                         <viewLayoutGuide key="safeArea" id="U3E-U0-WdA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="KCh-qH-w6Y"/>
+                    <connections>
+                        <outlet property="balanceTextField" destination="6bg-B0-sIy" id="qLD-ML-AKk"/>
+                        <outlet property="usernameTextField" destination="O55-6b-utQ" id="0qT-A0-l0q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5Z-0p-olj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

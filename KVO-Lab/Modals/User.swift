@@ -9,6 +9,6 @@
 import Foundation
 
 struct User {
-    let userName: String
-    let accountBalance: Double
+    var userName: String
+    var accountBalance: Double
 }
