@@ -16,6 +16,7 @@
 		B7A5215D243E81260096383E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5215B243E81260096383E /* Main.storyboard */; };
 		B7A5215F243E81270096383E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A5215E243E81270096383E /* Assets.xcassets */; };
 		B7A52162243E81270096383E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A52160243E81270096383E /* LaunchScreen.storyboard */; };
+		B7D214CB243F87C4008801F3 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D214CA243F87C4008801F3 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B7A5215E243E81270096383E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A52161243E81270096383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A52163243E81270096383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D214CA243F87C4008801F3 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				B7A52155243E81260096383E /* AppDelegate.swift */,
 				B7A52157243E81260096383E /* SceneDelegate.swift */,
 				B7A5215B243E81260096383E /* Main.storyboard */,
+				B7D214CA243F87C4008801F3 /* Account.swift */,
 				B77C6A8D243E890300733F45 /* Modals */,
 				B77C6A8A243E88F200733F45 /* Controllers */,
 				B7A5215E243E81270096383E /* Assets.xcassets */,
@@ -169,6 +172,7 @@
 				B77C6A89243E878E00733F45 /* DepositController.swift in Sources */,
 				B77C6A85243E875900733F45 /* CreateUserController.swift in Sources */,
 				B77C6A87243E877B00733F45 /* UserTableController.swift in Sources */,
+				B7D214CB243F87C4008801F3 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
