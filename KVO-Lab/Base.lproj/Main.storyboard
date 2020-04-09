@@ -52,15 +52,15 @@
             </objects>
             <point key="canvasLocation" x="913.04347826086962" y="127.90178571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Deposit Controller-->
         <scene sceneID="sbz-uG-Bfx">
             <objects>
-                <viewController id="ITv-dq-Hbu" sceneMemberID="viewController">
+                <viewController id="ITv-dq-Hbu" customClass="DepositController" customModule="KVO_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLG-Xb-FAh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybe-EJ-Vuc">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybe-EJ-Vuc">
                                 <rect key="frame" x="90" y="190" width="234" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -68,10 +68,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2s-vj-wAF">
                                 <rect key="frame" x="56" y="289" width="77" height="30"/>
                                 <state key="normal" title="Withdrawal"/>
+                                <connections>
+                                    <action selector="withdrawButtonPressed" destination="ITv-dq-Hbu" eventType="touchUpInside" id="cK0-Lz-dH9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-Gd-J6d">
                                 <rect key="frame" x="296" y="291" width="53" height="30"/>
                                 <state key="normal" title="Deposit"/>
+                                <connections>
+                                    <action selector="depositButtonPressed" destination="ITv-dq-Hbu" eventType="touchUpInside" id="QtY-ji-jgi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -87,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="QkZ-Ab-8gB"/>
                     </view>
                     <navigationItem key="navigationItem" id="HKF-PD-AmJ"/>
+                    <connections>
+                        <outlet property="textField" destination="ybe-EJ-Vuc" id="Ysn-gZ-cJL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1oK-lM-tT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
