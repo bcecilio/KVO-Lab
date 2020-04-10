@@ -30,12 +30,12 @@ class UserTableController: UIViewController {
         tableView.dataSource = self
     }
     
-    private func configureUserObservation() {
-        userNameObserver = Account.shared.observe(\.userName, options: [.old, .new], changeHandler: { [weak self] (account, change) in
-            guard let userNameValue = change.newValue else {return}
-            self?.user.first?.userName = userNameValue.
-        })
-    }
+//    private func configureUserObservation() {
+//        userNameObserver = Account.shared.observe(\.userName, options: [.old, .new], changeHandler: { [weak self] (account, change) in
+//            guard let userNameValue = change.newValue else {return}
+//            self?.user.first?.userName = userNameValue.
+//        })
+//    }
 }
 
 extension UserTableController: UITableViewDelegate, UITableViewDataSource {

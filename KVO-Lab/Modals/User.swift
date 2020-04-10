@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct User {
-    var userName: String
-    var accountBalance: Double
+@objc class User: NSObject {
+    
+    @objc dynamic var userName: String = "beanMan"
+    @objc dynamic var accountBalance: Double = 00.00
 }
