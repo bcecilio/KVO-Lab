@@ -17,11 +17,12 @@ class UserTableController: UIViewController {
             tableView.reloadData()
         }
     }
-    private var userNameObserver: NSKeyValueObservation?
+    private var userObserver: NSKeyValueObservation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureUserObservation()
         dump(user)
     }
     
@@ -30,12 +31,12 @@ class UserTableController: UIViewController {
         tableView.dataSource = self
     }
     
-//    private func configureUserObservation() {
-//        userNameObserver = Account.shared.observe(\.userName, options: [.old, .new], changeHandler: { [weak self] (account, change) in
-//            guard let userNameValue = change.newValue else {return}
-//            self?.user.first?.userName = userNameValue.
-//        })
-//    }
+    private func configureUserObservation() {
+        userObserver = Account.shared.observe(\.userArray, options: [.old, .new], changeHandler: { [weak self] (account, change) in
+            guard let newUser = change.newValue else {return}
+            self?.user = newUser
+        })
+    }
 }
 
 extension UserTableController: UITableViewDelegate, UITableViewDataSource {
